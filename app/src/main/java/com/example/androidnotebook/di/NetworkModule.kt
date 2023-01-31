@@ -1,6 +1,7 @@
 package com.example.androidnotebook.di
 
 import com.example.androidnotebook.api.UserAPI
+import com.example.androidnotebook.utils.Constants
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
@@ -16,7 +17,7 @@ class NetworkModule {
     fun providesRetrofit():Retrofit {
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("")
+            .baseUrl(Constants.BASE_URL)
             .build()
     }
 
