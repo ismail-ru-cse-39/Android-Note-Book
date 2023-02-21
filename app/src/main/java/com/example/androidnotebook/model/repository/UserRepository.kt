@@ -3,10 +3,10 @@ package com.example.androidnotebook.model.repository
 import android.util.Log
 import com.example.androidnotebook.api.UserAPI
 import com.example.androidnotebook.model.UserRequest
+import com.example.androidnotebook.utils.Constants.TAG
 import javax.inject.Inject
 
 class UserRepository @Inject constructor (private val userApi: UserAPI) {
-    private val TAG = "UserRepository"
 
     suspend fun registerUser(userRequest: UserRequest) {
         val response = userApi.signup(userRequest)

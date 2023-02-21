@@ -1,6 +1,6 @@
 package com.example.androidnotebook.utils
 
 object Constants {
-    const val TAG = "[SimpleNoteApp]"
-    const val BASE_URL = ""
+    const val TAG = "[NoteApp]"
+    const val BASE_URL = "https://notes-api-sample.herokuapp.com/"
 }
